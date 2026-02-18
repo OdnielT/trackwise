@@ -1,14 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Navbar } from "./Components/Navbar";
 import AddTask from "./Components/AddTask";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   return (
     <Container>
       <Navbar />
-      <AddTask />
+      <Row className="justify-content-md-center">
+        <Col lg="6">
+          <AddTask />
+        </Col>
+      </Row>
     </Container>
   );
 }

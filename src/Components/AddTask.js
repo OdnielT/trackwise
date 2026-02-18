@@ -15,9 +15,11 @@ const AddTask = () => {
         <Form.Control type="text" placeholder="Task Description" />
       </Form.Group>
 
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
+      <div className="text-end">
+        <Button variant="primary" type="submit">
+          Add Task
+        </Button>
+      </div>
     </Form>
   );
 };
