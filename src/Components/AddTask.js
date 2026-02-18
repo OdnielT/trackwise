@@ -11,6 +11,7 @@ const AddTask = () => {
   };
 
   return (
+    <section className="my-5">
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Task Name</Form.Label>
@@ -38,6 +39,7 @@ const AddTask = () => {
         </Button>
       </div>
     </Form>
+    </section>
   );
 };
 
