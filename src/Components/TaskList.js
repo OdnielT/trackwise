@@ -1,8 +1,17 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
 const TaskList = () => {
+
+  const updateTask = () => {
+    console.log('Updaet Task')
+  }
+
+  const deleteTask = () => {
+    console.log('Delete Task')
+  }
+
   return (
     <Table striped bordered hover>
       <thead>
@@ -14,11 +23,19 @@ const TaskList = () => {
         </tr>
       </thead>
       <tbody>
-        <tr className="text-center"> 
+        <tr className="text-center">
           <td>1</td>
           <td>Mark</td>
           <td>Otto</td>
-          <td> <Button variant="primary"><i className="bi bi-pencil-square"></i></Button>  <Button variant="primary"><i className="bi bi-trash3-fill"></i></Button></td>
+          <td>
+            <Button variant="primary" className="mx-2" onClick={() => updateTask()}>
+              <i className="bi bi-pencil-square"></i>
+            </Button>
+
+            <Button variant="primary" onClick={() => deleteTask()}>
+              <i className="bi bi-trash3-fill"></i>
+            </Button>
+          </td>
         </tr>
       </tbody>
     </Table>
