@@ -6,7 +6,7 @@ const TaskList = () => {
   return (
     <Table striped bordered hover>
       <thead>
-        <tr>
+        <tr className="text-center">
           <th>#</th>
           <th>Task</th>
           <th>Description</th>
@@ -14,7 +14,7 @@ const TaskList = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr className="text-center"> 
           <td>1</td>
           <td>Mark</td>
           <td>Otto</td>
